@@ -1,0 +1,28 @@
+#includ<stdio.h>
+  void rot(){
+  char a[100], b[100];
+    scanf("%s",a);
+  int c
+    for(c=0 ; a[c]!='\0'; c++){
+      if((a[c]>=65 && a[c]<=77) || (a[c]>=97 && a[c]<=109))
+        b[c]=a[c]+13;
+      else if((a[c]>=78 && a[c]<=90) || (a[c]>=109 && a[c]<=122))
+        b[c]=a[c]-13;
+    else b[c]=a[c];
+    }
+    b[c]='\0';
+    printf("%s\n",b);
+    }
+  int main(){
+    char d;
+    printf("Press 1 and enter to encode\n");
+    printf("Press 2 and enter to encode\n");
+    printf("Press 3 and enter to encode\n");
+    printf("\n")
+    while(d!='3'){
+      scanf("%c",&d);
+    if(d== '1' || k=='2')
+      rot();
+    }
+  return 0;
+  }

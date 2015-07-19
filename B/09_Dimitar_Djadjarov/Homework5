@@ -1,0 +1,41 @@
+#include<stdio>
+  int main(){
+    int a[20]
+    int b[12]
+    int c,d,f,g,h,j;
+      c=0
+      j=20
+      do{
+        scanf("%d",&d;)
+        b[c]=d;
+        c=c+1;
+      } while (c<12);
+      g=0;
+      for (f=0; f<=20; ++f){
+        a[f]=g;
+        g=g+1;
+        f=0;
+        c=0;
+        h=1;
+        printf("0: ");
+        do{
+          if (a[f]==b[c]){
+            printf("* ");
+          } c=c+1;
+        } while (c<12);
+        printf("\n");
+        f=f+1;
+        do{
+          c=0;
+          printf("%d",h);
+          do{
+            if (a[f]==b[c]){
+              printf("*");
+            } c=c+1;
+          } while (c<12);
+          printf("\n");
+          f=f+1;
+          h=h+1;
+        } while (h<=j);
+      return 0;
+    }

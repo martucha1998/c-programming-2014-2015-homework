@@ -20,36 +20,16 @@ int main()
 	int c1 = 3;
 	int c2 = 5;
 	int i;
-	int n1full = 0;
-	int n2full = 0;
-	int stopped = 5;
 	int tdoub = 1;
-	printf("(%d, %d)\n", c1, c2);
-	for (tdoub=1; tdoub<=9; tdoub++)
+	while (tdoub<=10)
 	{
-		i = stopped;
-		while (i<=99999)
+		if ((main1(c1)==1) && (main1(c2)==1) && (c2 -c1 == 2))
 		{
-			if ((main1(i)==1)&& (n1full==0))
-			{
-				c1 = i;
-				n1full = 1;
-			}
-			else if ((main1(i)==1)&& (n1full==1))
-			{
-				c2 = i;
-				n2full = 1;
-			}
-			if ((n1full==1) && (n2full==1))
-			{
-				printf("(%d, %d)\n", c1,c2);
-				n1full = 0;
-				n2full = 0;
-				stopped = c2+1;
-				break;
-			}
-			i++;
+			printf ("(%d, %d)\n", c1, c2);
+			tdoub++;
 		}
+		c1++;
+		c2++;
 	}
 	return 0;
 }
